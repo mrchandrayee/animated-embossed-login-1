@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d9e0e9">
+  <title>Animated Embossed Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1 class="page-title">Animated Embossed Login</h1>
+
+    <section class="login-circle" id="loginContainer" aria-label="Sign in">
+      <div class="success-msg" id="successMsg" aria-live="polite">
+        <div class="check-circle" aria-hidden="true">✓</div>
+        <h2>Welcome Back!</h2>
+        <p>Login Successful</p>
+        <button class="btn-reset" id="resetButton" type="button">Sign in again</button>
+      </div>
+
+      <form class="form-content" id="formContent">
+        <h2>SIGN IN</h2>
+        <p class="hint" id="formHint">Enter your username and password</p>
+
+        <div class="input-group">
+          <input type="text" id="username" name="username"
+                 placeholder="Username" autocomplete="username" required>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="password" name="password"
+                 placeholder="Password" autocomplete="current-password" required>
+        </div>
+
+        <button class="btn-submit" type="submit">Login</button>
+        <p class="form-error" id="formError" role="alert"></p>
+      </form>
+    </section>
+
+    <p class="demo-note">Neumorphic UI · Soft embossed shadows · Animated success state</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
